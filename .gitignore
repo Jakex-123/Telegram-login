@@ -19,7 +19,8 @@
 
 # production
 /build
-
+/src-tauri/binaries
+/src-tauri/target
 # misc
 .DS_Store
 *.pem
