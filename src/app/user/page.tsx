@@ -9,9 +9,9 @@ export default function Page() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await getUsers(); ; // No need to use .json()
+        const result = await getUsers();
         console.log("User Info:", result);
-        setData(result?.data?.user); // Extract the `user` object from the response
+        setData(result?.data?.user);
       } catch (error) {
         console.error("Error fetching user info:", error);
       }

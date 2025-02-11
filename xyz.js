@@ -11,11 +11,9 @@ if (!match) {
 }
 const targetTriple = match[1];
 
-// Determine the correct binary name
 const platformBinaryName = process.platform === 'win32' ? 'index-win.exe' : 'index-linux';
 const targetBinaryName = `index-${targetTriple}${extension}`;
 
-// Ensure the source file exists before renaming
 const sourcePath = `src-tauri/binaries/${platformBinaryName}`;
 const targetPath = `src-tauri/binaries/${targetBinaryName}`;
 
